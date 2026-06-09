@@ -12,6 +12,27 @@
   display: block;
   margin: 20px auto;  /* 中央配置 */
 }
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 6px;
+  margin: 8px auto 0;
+  text-align: left;
+}
+
+body {
+
+  margin: 0;
+
+}
+
+.icon {
+  width: 15px;  /* ←ここで小さくする */
+  height: 15px;
+  display: block;
+}
 .profile-container {
   position: relative;
   width: 150px;
