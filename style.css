@@ -39,27 +39,26 @@ body {
   margin: 20px auto;
 }
 
-.email {
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* アイコンと文字の間 */
+  justify-content: center;
+  width: 100%;
+}
 
-  margin-top: 5px;
 
-  margin-bottom: 15px;
+.mail a {
 
-  color: black;
+  text-decoration: underline; /* 下線 */
 
-  font-size: 14px;
-
-  text-align: center;
+  color: #000; /* 好きな色に変更OK */
 
 }
-.email a,
-
-.email a:visited {
-
-  color: black;
-
-  text-decoration: underline;
-
+.icon {
+  width: 20px;
+  height: 20px;
+  display: block;
 }
 
 
