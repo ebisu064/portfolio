@@ -94,3 +94,10 @@
   object-fit: cover;   /* トリミングして正方形に */
   display: block;
 }
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: gray;
+  margin-top: 40px;
+}
