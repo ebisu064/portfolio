@@ -1,0 +1,96 @@
+.logo {
+  width: 450px;
+  display: block;
+  margin: 0px auto 0;
+}
+.profile-icon {
+  width: 150px;      /* サイズ */
+  height: 150px;     /* サイズ */
+  border-radius: 100%; /* 丸くする */
+  object-fit: cover;  /* はみ出しを調整 */
+
+  display: block;
+  margin: 20px auto;  /* 中央配置 */
+}
+.profile-container {
+  position: relative;
+  width: 150px;
+  margin: 20px auto;
+}
+
+.email {
+
+  margin-top: 5px;
+
+  margin-bottom: 15px;
+
+  color: black;
+
+  font-size: 14px;
+
+  text-align: center;
+
+}
+.email a,
+
+.email a:visited {
+
+  color: black;
+
+  text-decoration: underline;
+
+}
+
+
+
+
+.profile-name {
+  margin-top: 10px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.profile-container {
+  width: 100%;
+  text-align: center;
+}
+
+.caption {
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  white-space: nowrap;
+  width: 100%;
+}
+.sns-links {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.sns-links a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+.sns-links a,
+.sns-links a:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* 正方形 */
+  object-fit: cover;   /* トリミングして正方形に */
+  display: block;
+}
