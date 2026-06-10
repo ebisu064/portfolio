@@ -90,13 +90,17 @@ body {
 }
 
 .sns-links a {
-  margin: 0 10px;
+  margin: 0;
   text-decoration: none;
 }
 .sns-links a,
 .sns-links a:visited {
   color: black;
   text-decoration: underline;
+}
+.sns-links a:not(:last-child)::after {
+  content: "|";
+  margin: 0 5px;
 }
 
 .gallery {
