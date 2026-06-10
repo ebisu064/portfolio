@@ -90,7 +90,7 @@ body {
 }
 
 .sns-links a {
-  margin: 0;
+  margin: 0 10px;
   text-decoration: none;
 }
 .sns-links a,
@@ -98,6 +98,16 @@ body {
   color: black;
   text-decoration: underline;
 }
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
 
 .gallery {
   display: grid;
