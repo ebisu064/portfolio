@@ -98,10 +98,6 @@ body {
   color: black;
   text-decoration: underline;
 }
-.sns-links a:not(:last-child)::after {
-  content: "|";
-  margin: 0 5px;
-}
 
 .gallery {
   display: grid;
