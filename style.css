@@ -71,6 +71,12 @@ body {
   font-weight: 300;
   text-align: center;
 }
+.profile-name-image {
+  width: 180px;   /* 好きな大きさに調整 */
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
 
 .profile-container {
   width: 100%;
@@ -97,6 +103,17 @@ body {
 .sns-links a:visited {
   color: black;
   text-decoration: underline;
+}
+.sns-links img {
+  height: 25px;   /* 画像の高さ */
+  width: auto;
+}
+
+.sns-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 a:link,
