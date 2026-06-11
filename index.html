@@ -42,7 +42,7 @@
   <span>|</span>
   <a href="https://ebisu064.tumblr.com/" target="_blank">tumblr</a>
   <span>|</span>
-  <a href="https://ebisu064.booth.pm/" target="_blank">BOOTH</a>
+  <a href="https://ebisu064.booth.pm/" target="_blank">Shop</a>
   <span>|</span>
   <a href="https://www.pixiv.net/users/113456952" target="_blank">pixiv</a>
 </div>
@@ -51,77 +51,55 @@
 
 <section class="gallery">
 
-  <a href="images/torisoboro.jpg" target="_blank">
-  <img src="images/torisoboro.jpg" alt="作品1">
-  </a>
+  <img src="images/torisoboro.jpg" alt="作品1" onclick="openModal(this)">
 
+  <img src="images/gogh.jpg" alt="作品2" onclick="openModal(this)">
 
-  <a href="images/gogh.jpg" target="_blank">
-  <img src="images/gogh.jpg" alt="作品2">
-  </a>
+  <img src="images/絡み合う.PNG" alt="作品3" onclick="openModal(this)">
 
+  <img src="images/きらめき.jpg" alt="作品4" onclick="openModal(this)">
 
-  <a href="images/絡み合う.PNG" target="_blank">
-  <img src="images/絡み合う.PNG" alt="作品3">
-  </a>
+  <img src="images/変なネイル.JPG" alt="作品5"onclick="openModal(this)">
 
+  <img src="images/zutto.jpg" alt="作品6" onclick="openModal(this)">
 
-<a href="images/きらめき.jpg" target="_blank">
-  <img src="images/きらめき.jpg" alt="作品4">
-  </a>
+  <img src="images/黒猫.jpg" alt="作品7" onclick="openModal(this)">
 
+   <img src="images/雑魚.jpg" alt="作品8" onclick="openModal(this)">
 
-<a href="images/変なネイル.JPG" target="_blank">
-  <img src="images/変なネイル.JPG" alt="作品5">
-  </a>
+   <img src="images/一途.jpg" alt="作品9" onclick="openModal(this)">
 
+ <img src="images/鼻血.jpg" alt="作品10" onclick="openModal(this)">
 
-   <a href="images/zutto.jpg" target="_blank">
-  <img src="images/zutto.jpg" alt="作品6">
-  </a>
+   <img src="images/pinkcat.jpg" alt="作品11"onclick="openModal(this)">
 
-<a href="images/黒猫.jpg" target="_blank">
-  <img src="images/黒猫.jpg" alt="作品7">
-  </a>
+  <img src="images/双子.jpg" alt="作品12" onclick="openModal(this)">
 
-   <a href="images/雑魚.jpg" target="_blank">
-   <img src="images/雑魚.jpg" alt="作品8">
-</a>
+  <img src="images/眼鏡っ娘.jpg" alt="作品13" onclick="openModal(this)">
 
- <a href="images/一途.jpg" target="_blank">
-  <img src="images/一途.jpg" alt="作品9">
-  </a>
+  <img src="images/二人.PNG" alt="作品14" onclick="openModal(this)">
 
-   <a href="images/鼻血.jpg" target="_blank">
- <img src="images/鼻血.jpg" alt="作品10">
- </a>
+  <img src="images/きのこのこ.jpg" alt="作品15" onclick="openModal(this)">
 
-   <a href="images/pinkcat.jpg" target="_blank">
-   <img src="images/pinkcat.jpg" alt="作品11">
-   </a>
-
-    <a href="images/双子.jpg" target="_blank">
-  <img src="images/双子.jpg" alt="作品12">
-  </a>
-
-   <a href="images/眼鏡っ娘.jpg" target="_blank">
-  <img src="images/眼鏡っ娘.jpg" alt="作品13">
-  </a>
-
-   <a href="images/二人.PNG" target="_blank">
-  <img src="images/二人.PNG" alt="作品14">
-  </a>
-
-   <a href="images/きのこのこ.jpg" target="_blank">
-  <img src="images/きのこのこ.jpg" alt="作品15">
-  </a>
-
+<div id="modal" class="modal" onclick="closeModal()">
+  <img id="modal-img">
+</div>
 </section>
 
 <footer>
   <p>© 2026 ebisu064. All Rights Reserved.</p>
 </footer>
 
+
+<script>
+function openModal(img) {
+  document.getElementById("modal").classList.add("show");
+  document.getElementById("modal-img").src = img.src;
+}
+function closeModal() {
+  document.getElementById("modal").classList.remove("show");
+}
+</script>
 </body>
 
 </html>
