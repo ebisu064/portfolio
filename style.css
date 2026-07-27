@@ -218,3 +218,8 @@ p a:hover {
 #fanart-gallery {
   display: none;
 }
+.tab-divider {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
