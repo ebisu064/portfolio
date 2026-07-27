@@ -201,3 +201,6 @@ p a:visited {
 p a:hover {
   text-decoration: underline;
 }
+#fanart-gallery {
+  display: none;
+}

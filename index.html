@@ -67,7 +67,7 @@
       </button>
 </div>
 
-<section class="gallery">
+<section class="gallery" id="original-gallery">
 
   <img src="images/error2.jpeg" alt="作品1" onclick="openModal(this)">
 
@@ -102,10 +102,7 @@
 </div>
 </section>
 
-
-<h2>Fan Art</h2>
-
-<section class="gallery">
+<section class="gallery" id="fanart-gallery">
  <img src="images/メデューサ.jpg" alt="作品1" onclick="openModal(this)">
   <img src="images/gogh.jpg" alt="作品2" onclick="openModal(this)">
      <img src="images/アークナイツ.JPG" alt="作品3" onclick="openModal(this)">
@@ -122,9 +119,20 @@ function openModal(img) {
   document.getElementById("modal").classList.add("show");
   document.getElementById("modal-img").src = img.src;
 }
+
 function closeModal() {
   document.getElementById("modal").classList.remove("show");
 }
+
+document.getElementById("original-btn").onclick = function () {
+  document.getElementById("original-gallery").style.display = "grid";
+  document.getElementById("fanart-gallery").style.display = "none";
+};
+
+document.getElementById("fanart-btn").onclick = function () {
+  document.getElementById("original-gallery").style.display = "none";
+  document.getElementById("fanart-gallery").style.display = "grid";
+};
 </script>
 </body>
 
