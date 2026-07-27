@@ -177,7 +177,7 @@ footer {
 .tabs {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   margin: 30px 0;
 }
 
@@ -186,10 +186,24 @@ footer {
   border: none;
   padding: 0;
   cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.tabs button.active {
+  opacity: 1;
+}
+
+.tabs button:hover {
+  opacity: 0.8;
+}
+
+.tabs button.active:hover {
+  opacity: 1;
 }
 
 .tabs img {
-  height: 30px; /* 好きな高さに変更OK */
+  height: 30px;
   width: auto;
   display: block;
 }
