@@ -126,14 +126,23 @@ function closeModal() {
   document.getElementById("modal").classList.remove("show");
 }
 
-document.getElementById("original-btn").onclick = function () {
+const originalBtn = document.getElementById("original-btn");
+const fanartBtn = document.getElementById("fanart-btn");
+
+originalBtn.onclick = function () {
   document.getElementById("original-gallery").style.display = "grid";
   document.getElementById("fanart-gallery").style.display = "none";
+
+  originalBtn.classList.add("active");
+  fanartBtn.classList.remove("active");
 };
 
-document.getElementById("fanart-btn").onclick = function () {
+fanartBtn.onclick = function () {
   document.getElementById("original-gallery").style.display = "none";
   document.getElementById("fanart-gallery").style.display = "grid";
+
+  fanartBtn.classList.add("active");
+  originalBtn.classList.remove("active");
 };
 </script>
 </body>
