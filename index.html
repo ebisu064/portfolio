@@ -66,6 +66,13 @@
    <button id="fanart-btn">
        <img src="images/fanart.jpg" alt="Fanart">
       </button>
+       <span class="tab-divider">|</span>
+
+  <button id="traditional-btn">
+
+    <img src="images/traditional.jpg" alt="Traditional Art">
+
+  </button>
 </div>
 
 <section class="gallery" id="original-gallery">
@@ -107,6 +114,22 @@
      <img src="images/雑魚.jpg" alt="作品4" onclick="openModal(this)">
 </section>
 
+<section class="gallery" id="traditional-gallery">
+
+  <img src="images/timidoro.jpg" alt="作品1" onclick="openModal(this)">
+  <img src="images/ぐるぐる.JPG" alt="作品2" onclick="openModal(this)">
+  <img src="images/金猫.JPG" alt="作品3" onclick="openModal(this)">
+  <img src="images/助けて.JPG" alt="作品4" onclick="openModal(this)">
+  <img src="images/赤色.JPG" alt="作品5" onclick="openModal(this)">
+  <img src="images/暑いね.JPG" alt="作品6" onclick="openModal(this)">
+   <img src="images/ピース.jpeg" alt="作品7" onclick="openModal(this)">
+  <img src="images/キュルン.jpeg" alt="作品8" onclick="openModal(this)">
+  <img src="images/kuuhaku.jpg" alt="作品9" onclick="openModal(this)">
+  <img src="images/kubisime.jpg" alt="作品10" onclick="openModal(this)">
+  <img src="images/猫耳.jpeg" alt="作品11" onclick="openModal(this)">
+
+</section>
+
 <div id="modal" class="modal" onclick="closeModal()">
   <img id="modal-img">
 </div>
@@ -134,22 +157,36 @@ function closeModal() {
 
 const originalBtn = document.getElementById("original-btn");
 const fanartBtn = document.getElementById("fanart-btn");
-
+const traditionalBtn = document.getElementById("traditional-btn");
 originalBtn.onclick = function () {
   document.getElementById("original-gallery").style.display = "grid";
   document.getElementById("fanart-gallery").style.display = "none";
+  document.getElementById("traditional-gallery").style.display = "none";
 
   originalBtn.classList.add("active");
   fanartBtn.classList.remove("active");
+  traditionalBtn.classList.remove("active");
 };
-
 fanartBtn.onclick = function () {
   document.getElementById("original-gallery").style.display = "none";
   document.getElementById("fanart-gallery").style.display = "grid";
+  document.getElementById("traditional-gallery").style.display = "none";
 
   fanartBtn.classList.add("active");
   originalBtn.classList.remove("active");
+  traditionalBtn.classList.remove("active");
 };
+traditionalBtn.onclick = function () {
+  document.getElementById("original-gallery").style.display = "none";
+  document.getElementById("fanart-gallery").style.display = "none";
+  document.getElementById("traditional-gallery").style.display = "grid";
+
+  traditionalBtn.classList.add("active");
+  originalBtn.classList.remove("active");
+  fanartBtn.classList.remove("active");
+};
+
+
 </script>
 </body>
 
