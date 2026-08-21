@@ -223,7 +223,8 @@ p a:hover {
   align-items: center;
   margin: 0 10px;
 }
-#count {
-  border: 1px solid black;
+.counter-box {
+  display: inline-block;
+  border: 1px solid #000;
   padding: 2px 6px;
 }
